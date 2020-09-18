@@ -1,4 +1,4 @@
-Script for automation of refreshing Power BI workbooks. Built on Python 3.8, pywinauto, pyautogui.
+Script for automation of refreshing Power BI Desktop workbooks. Built on Python 3.8, pywinauto, pyautogui.
 
 Based on: 
 dubravcik/pbixrefresher-python (original script)
