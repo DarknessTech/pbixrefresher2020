@@ -11,8 +11,9 @@ Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 wi
 
 Installation
 ------
-Install using `pip`
-Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
+Install Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
+Install script using `pip`
+
 
 ```
 pip install pbixrefresher
