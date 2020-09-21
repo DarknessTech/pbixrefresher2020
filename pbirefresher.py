@@ -52,20 +52,22 @@ def main():
 	print("Waiting for refresh end (timeout in ", REFRESH_TIMEOUT,"sec)")
 	win.wait("enabled", timeout = REFRESH_TIMEOUT)
 
-	# Save
-	print("Saving")
-	pyautogui.hotkey('ctrl', 's')
-	time.sleep(15)
-
 	# Publish
 	if args.publish:
-		print("Publish")
+		print("Save and Publish")
 		win.Publish.click_input()
+		time.sleep(10)
+		save_dialog = win.child_window(auto_id = "modalDialog")
+		save_dialog.Save.click_input()
+		time.sleep(10)
 		publish_dialog = win.child_window(auto_id = "KoPublishToGroupDialog")
 		publish_dialog.child_window(title = WORKSPACE, found_index=1).click_input()
+		time.sleep(10)
 		publish_dialog.Select.click()
+		time.sleep(10)
 		replace_dialog = win.child_window(auto_id = "KoPublishWithImpactViewDialog")
 		replace_dialog.Replace.click()
+		time.sleep(10)
 		
 	#Close
 	print("Exiting")
