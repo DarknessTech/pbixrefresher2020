@@ -27,13 +27,15 @@ pip install pbixrefresher
 pip install pywinauto 
 pip install pyautogui
 ```
+Replace the scrip from the phyton installation folder (C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher\pbixrefresher.py)
+with the pbixrefresher.py included in this release.
 
 Usage
 -----
 Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder). It makes possible for the script to see the PowerBI menus.
 
 ```
-pbixrefresher.py <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
+pbixrefresher <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
 
 where <WORKBOOK> is path to .pbix file
       --workspace <text> is name of online Power BI service work space to publish in (default My workspace)
@@ -41,6 +43,7 @@ where <WORKBOOK> is path to .pbix file
       --no-publish is switch to just refresh and save the workbook and skip publishing to online service (default False)
       --init-wait <number> is time to wait until Power BI Desktop starts (default 15)
 ```
+You can run it directly
 
 Scheduling in Windows Task Scheduler
 -----
