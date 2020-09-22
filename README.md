@@ -49,4 +49,4 @@ Please keep in mind that this script uses GUI of Power BI Desktop and it needs t
 Running in a VM
 -----
 
-You can use the closesession.bat, just edit the username with yours.  Instead of disconnecting from Remote Desktop normally, with closesession.bat it closes the session but maintein the GUI active so the python script can work.
+You can use the closesession.bat, just edit the username with yours. Instead of disconnecting from Remote Desktop normally, with closesession.bat it closes the session but maintein the GUI active so the python script can work.
