@@ -29,7 +29,7 @@ Replace the pbixrefresher.py file in the python installation folder (C:\Users\US
 
 Usage
 -----
-Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder), it makes possible for the script to see the PowerBI menus.
+Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder), it makes possible for the script to detect the Power BI elements.
 
 ```
 pbixrefresher <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
