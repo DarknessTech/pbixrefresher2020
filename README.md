@@ -1,6 +1,7 @@
 Power BI refresher
 ======
-Script for automation of refreshing Power BI Desktop workbooks. Edited on Python 3.8 with pywinauto, pyautogui.
+Script for automation of refreshing Power BI Desktop workbooks.
+Edited on Python 3.8 with pywinauto, pyautogui.
 ------
 Based on: 
 Original Script - https://github.com/dubravcik/pbixrefresher-python | 
