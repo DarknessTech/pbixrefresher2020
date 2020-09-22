@@ -1,11 +1,10 @@
 Power BI Refresher 2020
 ======
-
-This script originaly is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.
-
 Script for automation of refreshing Power BI Desktop workbooks. Edited on Python 3.8 with pywinauto, pyautogui.
 
 Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 with English/Portuguese(Brazil) locales.
+
+*This script originaly is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.*
 
 Based on (Scripts and Guides):
 ------
