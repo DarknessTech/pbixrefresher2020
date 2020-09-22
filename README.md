@@ -33,7 +33,7 @@ Usage
 Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder). It makes possible for the script to see the PowerBI menus.
 
 ```
-pbixrefresher <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
+pbixrefresher.py <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
 
 where <WORKBOOK> is path to .pbix file
       --workspace <text> is name of online Power BI service work space to publish in (default My workspace)
@@ -63,7 +63,3 @@ Running on a VM
 
 If running on a VM you can use the closesession.bat, just edit the username with yours.
 the scrip closes the session but maintein the gui active so the scrip can work.
-
-See how it works
------
-[![pbixrefresher](http://img.youtube.com/vi/8HSK_-1ULro/0.jpg)](https://www.youtube.com/watch?v=8HSK_-1ULro "pbixrefresher")
