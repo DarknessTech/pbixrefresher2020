@@ -1,4 +1,4 @@
-Power BI Refresher
+Power BI Refresher 2020
 ======
 
 This script originaly is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.
