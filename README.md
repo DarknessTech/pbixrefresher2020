@@ -1,16 +1,20 @@
 Power BI Refresher
 ======
-Script for automation of refreshing Power BI Desktop workbooks.
-Edited on Python 3.8 with pywinauto, pyautogui.
 
-Based on:
-------
-Original Script - https://github.com/dubravcik/pbixrefresher-python | 
-Script - https://github.com/LevonPython/PbiRefresher | 
-Solution - https://github.com/pywinauto/pywinauto/issues/943 | 
+This script is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.
+
+Script for automation of refreshing Power BI Desktop workbooks. Edited on Python 3.8 with pywinauto, pyautogui.
 
 Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 with English/Portuguese(Brazil) locales.
 
+Based on:
+------
+```
+https://github.com/dubravcik/pbixrefresher-python (Original Script)
+https://github.com/LevonPython/PbiRefresher
+https://github.com/pywinauto/pywinauto/issues/943 
+https://stackoverflow.com/questions/15887729/can-the-gui-of-an-rdp-session-remain-active-after-disconnect
+```
 Installation
 ------
 Install Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/) |
@@ -20,11 +24,13 @@ Install script using `pip`
 
 ```
 pip install pbixrefresher
+pip install pywinauto 
+pip install pyautogui
 ```
 
 Usage
 -----
-Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder)
+Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder). It makes possible for the script to see the PowerBI menus.
 
 ```
 pbixrefresher <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
