@@ -1,7 +1,7 @@
 Power BI Refresher
 ======
 
-This script is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.
+This script originaly is not mine (original post bellow), I just updated it to make it run on the latest version of PowerBI.
 
 Script for automation of refreshing Power BI Desktop workbooks. Edited on Python 3.8 with pywinauto, pyautogui.
 
@@ -17,7 +17,7 @@ https://stackoverflow.com/questions/15887729/can-the-gui-of-an-rdp-session-remai
 ```
 Installation
 ------
-Install Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/) |
+Install Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
 
 Install script using `pip`
 
@@ -26,13 +26,11 @@ pip install pbixrefresher
 pip install pywinauto 
 pip install pyautogui
 ```
-Replace the pbixrefresher.py file in the python installation folder,
-(C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher) 
-with the pbixrefresher.py included in this release.
+Replace the pbixrefresher.py file in the python installation folder (C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher) with the pbixrefresher.py file included in this release.
 
 Usage
 -----
-Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder). It makes possible for the script to see the PowerBI menus.
+Before runing the Script, run Inspect.exe (included in Windows SDK instalation folder), it makes possible for the script to see the PowerBI menus.
 
 ```
 pbixrefresher <WORKBOOK> [-workspace <WORKSPACE>] [--refresh-timeout <REFRESH_TIMEOUT>] [--no-publish]
@@ -43,26 +41,12 @@ where <WORKBOOK> is path to .pbix file
       --no-publish is switch to just refresh and save the workbook and skip publishing to online service (default False)
       --init-wait <number> is time to wait until Power BI Desktop starts (default 15)
 ```
-You can run it directly
 
-Scheduling in Windows Task Scheduler
+Reminder
 -----
 Please keep in mind that this script uses GUI of Power BI Desktop and it needs that a user is logged in Windows session. You should also deactivate lock screen time. Ideally you should schedule the script on a computer where the GUI is not used to not interfere the scripting, for example dedicated Virtual Machine.
-
-1. Open Task Scheduler
-2. Click Create Basic Task
-3. Fill a Name and click Next
-4. Set a trigger and click Next
-5. Pick Start a program as an action and click Next
-6. in Program/script type absolute path to pbixrefresher.exe in your scripts folder in Python installation path (for example "C:\ProgramData\Anaconda3\Scripts\pbixrefresher.exe")
-
-   in Arguments type file name of the workbook (for example "sample.pbix")
-   
-   in Start in type absolute path workbook (for example "C:\workbooks\")
-7. Confirm and Finish
 
 Running on a VM
 -----
 
-If running on a VM you can use the closesession.bat, just edit the username with yours.
-the scrip closes the session but maintein the gui active so the scrip can work.
+If running on a VM you can use the closesession.bat, just edit the username with yours. closesession.bat closes the session but maintein the GUI active so the python script can work.
