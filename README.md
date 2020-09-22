@@ -50,11 +50,12 @@ Please keep in mind that this script uses GUI of Power BI Desktop and it needs t
    in Start in type absolute path workbook (for example "C:\workbooks\")
 7. Confirm and Finish
 
+Running on a VM
+-----
+
+If running on a VM you can use the closesession.bat, just edit the username with yours.
+the scrip closes the session but maintein the gui active so the scrip can work.
 
 See how it works
 -----
 [![pbixrefresher](http://img.youtube.com/vi/8HSK_-1ULro/0.jpg)](https://www.youtube.com/watch?v=8HSK_-1ULro "pbixrefresher")
-
-Bug reporting
------
-Create Github issue. Please write version of your Power BI Desktop, OS and attach command line result and screenshot.
