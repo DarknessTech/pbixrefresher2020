@@ -21,13 +21,13 @@ Install Windows SDK (https://developer.microsoft.com/en-us/windows/downloads/sdk
 
 Install script using `pip`
 
-
 ```
 pip install pbixrefresher
 pip install pywinauto 
 pip install pyautogui
 ```
-Replace the scrip from the phyton installation folder (C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher\pbixrefresher.py)
+Replace the pbixrefresher.py file in the python installation folder,
+(C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher) 
 with the pbixrefresher.py included in this release.
 
 Usage
