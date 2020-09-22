@@ -26,7 +26,7 @@ pip install pbixrefresher
 pip install pywinauto 
 pip install pyautogui
 ```
-Replace the pbixrefresher.py file in the python installation folder (C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher)                 with the pbixrefresher.py file included in this release.
+Replace the pbixrefresher.py file in the python installation folder (C:\Users\USERNAME\AppData\Local\Programs\Python\Python38\Lib\site-packages\pbixrefresher) with the pbixrefresher.py file included in this release.
 
 Usage
 -----
