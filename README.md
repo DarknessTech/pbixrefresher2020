@@ -7,7 +7,7 @@ Original Script - https://github.com/dubravcik/pbixrefresher-python |
 Script - https://github.com/LevonPython/PbiRefresher |
 Solution - https://github.com/pywinauto/pywinauto/issues/943 |
 
-Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 with English locale.
+Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 with English/Portuguese(Brazil) locale.
 
 Installation
 ------
