@@ -7,7 +7,7 @@ Script for automation of refreshing Power BI Desktop workbooks. Edited on Python
 
 Added compatibility to PowerBI Version 2.84.981.0 (August 2020) on Windows 10 with English/Portuguese(Brazil) locales.
 
-Based on:
+Based on (Scripts and Guides):
 ------
 ```
 https://github.com/dubravcik/pbixrefresher-python (Original Script)
