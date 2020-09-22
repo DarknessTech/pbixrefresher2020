@@ -63,15 +63,14 @@ def main():
 		publish_dialog = win.child_window(auto_id = "KoPublishToGroupDialog")
 		publish_dialog.child_window(title = WORKSPACE, found_index=1).click_input()
 		time.sleep(10)
-		publish_dialog.Select.click()
+		publish_dialog.Select.click_input()
 		time.sleep(10)
 		replace_dialog = win.child_window(auto_id = "KoPublishWithImpactViewDialog")
-		replace_dialog.Replace.click()
-		time.sleep(10)
+		replace_dialog.Replace.click_input()
+		time.sleep(300)
 		
 	#Close
 	print("Exiting")
-	time.sleep(300)
 	win.close()
 
 	# Force close
